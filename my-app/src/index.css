@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/Poppins-Light.ttf');
+}
+
 body {
     background-image: url('/desktop-background.jpg');
     background-repeat: no-repeat;
@@ -9,7 +14,7 @@ body {
 body::before {
     content: "";
     background: rgba(0, 0, 0, 0.3);
-    z-index: 0;
+    z-index: -1;
     position : absolute;
     inset: 0;
 }

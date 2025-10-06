@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Dancing Script';
+    src: url('../../assets/DancingScript-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../../assets/Lato-Light.ttf');
+}
+
+.logo p:first-child {
+    font-family: 'Dancing Script';
+    font-size: 20px;
+}
+
+.logo > :nth-child(2){
+    font-size: 8px;
+    font-family: 'Lato';
+}
+
+.logo {
+    padding: 0;
+    margin : 0;
+}
+
+.logo > * {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.nav > p{
+    font-size : 12px;
+    font-family: 'Poppins';
+    margin: 7px 0 0 0;
+}
+
+.nav {
+    background-color: white;
+    display : grid;
+    grid-template-columns : auto auto auto auto;
+    margin : auto;
+    width : 40%;
+    grid-gap : 10px;
+    padding : 5px 0px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px;
+}
+
+.nav > *{
+    vertical-align : middle;
+}
+
