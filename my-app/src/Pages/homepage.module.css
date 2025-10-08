@@ -1,0 +1,22 @@
+.title {
+    font-family: 'Playfair Display';
+    color : #273327;
+}
+
+.details, .callToAction {
+    font-family: 'Poppins';
+    color : white;
+}
+
+.callToAction {
+    background-color : rgb(206, 43, 55, 0.4);
+    border : none;
+    border-radius: 20px;
+    padding : 5px;
+}
+
+.container {
+    margin-left : 110px;
+    margin-top : 50px;
+    width : 60%;
+}

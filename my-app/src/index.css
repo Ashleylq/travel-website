@@ -3,6 +3,11 @@
     src: url('./assets/Poppins-Light.ttf');
 }
 
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('./assets/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
 body {
     background-image: url('/desktop-background.jpg');
     background-repeat: no-repeat;
