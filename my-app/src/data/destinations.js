@@ -1,8 +1,17 @@
+import RomeImg from '../assets/images/Rome.jpg'
+import VeniceImg from '../assets/images/Venice.jpg'
+import FlorenceImg from '../assets/images/Florence.jpg'
+import MilanImg from '../assets/images/Milan.jpg'
+import BolognaImg from '../assets/images/Bologna.jpg'
+import NaplesImg from '../assets/images/Naples.jpg'
+import TurinImg from '../assets/images/Turin.jpg'
+import VeronaImg from '../assets/images/Verona.jpg'
+
 export const destinations = [
   {
     id: 1,
     name: "Rome",
-    image: "../assets/images/rome.jpg",
+    image: RomeImg,
     description:
       "The Eternal City — where ancient history meets vibrant modern life. Wander through cobbled streets, admire Renaissance art, and savor authentic Italian cuisine.",
     highlights: ["Colosseum", "Vatican City", "Trevi Fountain", "Pantheon"],
@@ -10,7 +19,7 @@ export const destinations = [
   {
     id: 2,
     name: "Venice",
-    image: "../assets/images/venice.jpg",
+    image: VeniceImg,
     description:
       "A floating masterpiece built on water. With its romantic canals, gondolas, and golden sunsets, Venice offers a timeless charm found nowhere else.",
     highlights: ["Grand Canal", "St. Mark’s Basilica", "Rialto Bridge"],
@@ -18,7 +27,7 @@ export const destinations = [
   {
     id: 3,
     name: "Florence",
-    image: "../assets/images/florence.jpg",
+    image: FlorenceImg,
     description:
       "Birthplace of the Renaissance — every corner of Florence breathes art, architecture, and beauty. A must-visit for lovers of history and design.",
     highlights: ["Duomo", "Uffizi Gallery", "Ponte Vecchio"],
@@ -26,7 +35,7 @@ export const destinations = [
   {
     id: 4,
     name: "Milan",
-    image: "../assets/images/milan.jpg",
+    image: MilanImg,
     description:
       "Italy’s fashion and design capital, Milan combines cutting-edge modernity with historic charm. Shop, dine, and explore one of Europe’s most stylish cities.",
     highlights: [
@@ -38,7 +47,7 @@ export const destinations = [
   {
     id: 5,
     name: "Naples",
-    image: "../assets/images/naples.jpg",
+    image: NaplesImg,
     description:
       "Vibrant, loud, and full of life — Naples is the birthplace of pizza and gateway to the Amalfi Coast. Experience authentic southern Italian culture at its finest.",
     highlights: ["Mount Vesuvius", "Pompeii", "Spaccanapoli"],
@@ -46,7 +55,7 @@ export const destinations = [
   {
     id: 6,
     name: "Bologna",
-    image: "../assets/images/bologna.jpg",
+    image: BolognaImg,
     description:
       "A city of towers, porticoes, and culinary brilliance. Bologna is a hidden gem for foodies and history lovers alike.",
     highlights: ["Piazza Maggiore", "Two Towers", "University of Bologna"],
@@ -54,7 +63,7 @@ export const destinations = [
   {
     id: 7,
     name: "Turin",
-    image: "../assets/images/turin.jpg",
+    image: TurinImg,
     description:
       "Elegant and sophisticated, Turin blends baroque architecture with a passion for chocolate, cinema, and cars.",
     highlights: ["Mole Antonelliana", "Egyptian Museum", "Piazza Castello"],
@@ -62,7 +71,7 @@ export const destinations = [
   {
     id: 8,
     name: "Verona",
-    image: "../assets/images/verona.jpg",
+    image: VeronaImg,
     description:
       "The city of Romeo and Juliet, Verona is a romantic haven filled with Roman ruins, piazzas, and love stories.",
     highlights: ["Verona Arena", "Juliet’s Balcony", "Piazza delle Erbe"],

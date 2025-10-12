@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Dancing Script';
-    src: url('../../assets/DancingScript-VariableFont_wght.ttf') format('truetype');
+    src: url('../../assets/fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Lato';
-    src: url('../../assets/Lato-Light.ttf');
+    src: url('../../assets/fonts/Lato-Light.ttf');
 }
 
 .logo p:first-child {

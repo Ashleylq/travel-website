@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Poppins';
-    src: url('./assets/Poppins-Light.ttf');
+    src: url('./assets/fonts/Poppins-Light.ttf');
 }
 
 @font-face {
     font-family: 'Playfair Display';
-    src: url('./assets/PlayfairDisplay-VariableFont_wght.ttf');
+    src: url('./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf');
 }
 
 body {

@@ -1,0 +1,23 @@
+.img {
+    width : 100%;
+    aspect-ratio: 1/1;
+    object-fit : cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px;
+}
+
+.text {
+    font-family : 'Playfair Display';
+    font-weight : bold;
+    text-transform: uppercase;
+    font-size : 32px;
+    color : white;
+    position: absolute;
+    bottom : 10%;
+    left: 50%;
+    transform : translateX(-50%)
+}
+
+.container {
+    position : relative;
+}
