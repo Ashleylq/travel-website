@@ -14,7 +14,7 @@ export const destinations = [
     image: RomeImg,
     description:
       "The Eternal City — where ancient history meets vibrant modern life. Wander through cobbled streets, admire Renaissance art, and savor authentic Italian cuisine.",
-    highlights: ["Colosseum", "Vatican City", "Trevi Fountain", "Pantheon"],
+    highlights: ["Colosseum", "Trevi Fountain", "Pantheon"],
   },
   {
     id: 2,
@@ -50,7 +50,7 @@ export const destinations = [
     image: NaplesImg,
     description:
       "Vibrant, loud, and full of life — Naples is the birthplace of pizza and gateway to the Amalfi Coast. Experience authentic southern Italian culture at its finest.",
-    highlights: ["Mount Vesuvius", "Pompeii", "Spaccanapoli"],
+    highlights: ["Mount Vesuvius", "Pompeii", "Piazza del Plebiscito"],
   },
   {
     id: 6,
