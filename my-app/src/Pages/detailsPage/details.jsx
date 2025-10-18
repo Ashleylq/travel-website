@@ -29,6 +29,7 @@ export default function DetailsPage({city}){
             arr.push({
                 name : highlight,
                 img : resJSON.results[0].urls.regular,
+                alt : resJSON.results[0].alt_description
             })
         }
         setHighlights(arr);
@@ -38,23 +39,23 @@ export default function DetailsPage({city}){
     }, [])
     return(
         <div className={styles.container}>
-            <img className={styles.img} src={city.image}/>
+            <img className={styles.img} src={city.image} alt={`An image of ${city.name}`}/>
             <div style={{margin : '0 15px'}}>
                 <h1 className={styles.name}>{city.name}</h1>
                 <p className={styles.description}>{city.description}</p>
             </div>
             <div className={styles.weatherContainer}>
                 <img className={styles.weatherimg} src={`https://raw.githubusercontent.com/visualcrossing/WeatherIcons/refs/heads/main/SVG/3rd%20Set%20-%20Color/${weather.icon}.svg`}/>
-                <p className={styles.temperature}>Feels like: <br/> {weather.feelsLike}</p>
+                <p className={styles.temperature}>{weather.feelsLike}&deg;C</p>
                 <p style={{gridColumn : '1/ span 2'}}>{weather.conditions}</p>
                 <p style={{gridColumn : '1/ span 2'}}>Chances for precipitation: {weather.precipitation}%</p>
             </div>
             {highlights.map(a => {
-                return(<DestinationCard name={a.name} img={a.img}/>)
+                return(<DestinationCard name={a.name} img={a.img} alt={a.alt}/>)
             })}
             {weather.lat && weather.lon ? (
             <CityMap lat={weather.lat} lon={weather.lon} city={city.name} />
-            ) : (<p style={{fontFamily : 'Poppins', fontSize : '30px', margin : 'auto'}}>Location Data not available</p>)}
+            ) : (<p></p>)}
         </div>
     )
 }

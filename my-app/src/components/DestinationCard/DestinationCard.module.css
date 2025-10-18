@@ -2,22 +2,58 @@
     width : 100%;
     aspect-ratio: 1/1;
     object-fit : cover;
-    border-radius: 10px;
+    border-radius: 0.97vw;
     box-shadow: 0 2px 5px;
+    transform : translateY(0), scale(1);
+    transition: transform 0.5s ease-out, box-shadow 2s ease-out;
+    z-index : 0;
+    position : relative;
 }
 
 .text {
     font-family : 'Playfair Display';
     font-weight : bold;
     text-transform: uppercase;
-    font-size : 32px;
+    font-size : 2rem;
     color : white;
     position: absolute;
     bottom : 10%;
     left: 50%;
-    transform : translateX(-50%)
+    transform : translateX(-50%);
+    pointer-events: none;
+    z-index : 2;
+    animation : fade-in 1.5s ease-out 0.4s;
 }
 
 .container {
     position : relative;
+    animation: fade-in 1.5s ease-out 0.2s;
+}
+
+.container:hover .img {
+    transform: translateY(0.97vw), scale(1.05);
+    box-shadow : 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.img::before{
+    opacity : 0;
+    transition : opacity 0.7s ease-out;
+}
+
+.container:hover .img::before {
+    opacity : 1;
+    inset : 0;
+    content : "";
+    background-color : rgba(245, 148, 2, 0.3);
+    position : absolute;
+    z-index : 1;
+}
+
+@keyframes fade-in{
+    from{
+        opacity : 0
+    }
+    to{
+        opacity : 1
+    }
 }

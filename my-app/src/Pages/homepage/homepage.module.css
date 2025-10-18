@@ -1,22 +1,86 @@
 .title {
     font-family: 'Playfair Display';
     color : #273327;
+    animation : fade-in-right 1.5s ease-out
 }
 
 .details, .callToAction {
     font-family: 'Poppins';
     color : white;
 }
+  
+.details{
+    animation : fade-in-right 1.6s ease-out
+}
+
+.callToAction {
+    animation : fade-in-right 1.7s ease-out
+}
+
 
 .callToAction {
     background-color : rgb(206, 43, 55, 0.4);
     border : none;
-    border-radius: 20px;
-    padding : 5px;
+    border-radius: 1.95vw;
+    padding : 0.48vw;
+    transform : translateY(0);
+    transition : transform 0.3s ease-out, background-color 0.3s ease-out;
+}
+
+.callToAction:hover {
+    background-color : rgb(211, 48, 60, 0.8);
+    transform : translateY(0.2vw);
 }
 
 .container {
-    margin-left : 110px;
-    margin-top : 50px;
+    margin-left : 10.74vw;
+    margin-top : 4.88vw;
     width : 60%;
+}
+
+@media (max-width : 768px){
+    .container {
+        margin-right : 1.95vw;
+        float : right;
+    }
+
+    .container > * {
+        float : right;
+        text-align : right;
+    }
+    
+    .title{
+        animation : fade-in-left 1.2s ease-out
+    }
+
+    .details {
+        animation : fade-in-left 1.3s ease-out
+    }
+
+    .callToAction {
+        animation : fade-in-left 1.4s ease-out 
+    }
+
+}
+
+@keyframes fade-in-left {
+    from {
+        opacity : 0;
+        transform : translateX(2.93vw)
+    }
+    to {
+        opacity : 1;
+        transform : translateX(0)
+    }
+}
+
+@keyframes fade-in-right{
+    from{
+        opacity : 0;
+        transform : translateX(-11.71vw)
+    }
+    to {
+        opacity : 1;
+        transform : translateX(0);
+    }
 }

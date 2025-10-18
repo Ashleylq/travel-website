@@ -12,11 +12,11 @@
 
 .logo p:first-child {
     font-family: 'Dancing Script';
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .logo > :nth-child(2){
-    font-size: 8px;
+    font-size: 0.5rem;
     font-family: 'Lato';
 }
 
@@ -31,9 +31,14 @@
 }
 
 .nav > p{
-    font-size : 12px;
+    font-size : 0.75rem;
     font-family: 'Poppins';
-    margin: 7px 0 0 0;
+    margin: 0.68vw 0 0 0;
+    transition : color 2s ease-out;
+}
+
+.nav > p:hover {
+    color : #8a1313;
 }
 
 .nav {
@@ -42,13 +47,24 @@
     grid-template-columns : auto auto auto auto;
     margin : auto;
     width : 40%;
-    grid-gap : 10px;
-    padding : 5px 0px;
-    border-radius: 50px;
+    grid-gap : 1.25vw;
+    padding : 0.48vw 1.46vw;
+    border-radius: 4.88vw;
     box-shadow: 0 2px 5px;
+    animation: slide-down 1.2s ease-out;
 }
 
 .nav > *{
     vertical-align : middle;
 }
 
+@keyframes slide-down {
+    from{
+        transform : translateY(-5.76vw);
+        opacity : 0;
+    }
+    to {
+        transform : translateY(0);
+        opacity : 1;
+    }
+}

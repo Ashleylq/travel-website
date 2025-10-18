@@ -16,6 +16,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    animation : zoom-in 0.8s ease-out;
 }
 
 body::before {
@@ -24,4 +25,33 @@ body::before {
     z-index: -1;
     position : absolute;
     inset: 0;
+    animation : brighten 0.8s ease-out;
 }
+
+@media (max-width : 768px){
+    body{
+        background-image: url('/mobile-background.jpg');
+    }
+}
+
+@keyframes zoom-in {
+    from {
+        background-size : 110%;
+    }
+    75%{
+        background-size : 100%;
+    }
+    to {
+        background-size : cover;
+    }
+}
+
+@keyframes brighten {
+    from {
+        background-color: rgb(0, 0, 0, 0.6);
+    }
+    to {
+        background-color: rgb(0, 0, 0, 0.3);
+    }
+}
+

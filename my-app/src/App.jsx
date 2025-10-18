@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      <DetailsPage city={destinations[7]}/>
+      <DestinationsPage/>
     </>
   )
 }
