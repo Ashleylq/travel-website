@@ -16,7 +16,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    animation : zoom-in 0.8s ease-out;
+    animation : zoom-out 0.8s ease-out;
 }
 
 body::before {
@@ -34,15 +34,12 @@ body::before {
     }
 }
 
-@keyframes zoom-in {
+@keyframes zoom-out {
     from {
-        background-size : 110%;
-    }
-    75%{
-        background-size : 100%;
+        background-size: 115%;
     }
     to {
-        background-size : cover;
+        background-size: 100%;
     }
 }
 
