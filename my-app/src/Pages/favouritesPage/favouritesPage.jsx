@@ -2,6 +2,7 @@ import { useEffect , useState } from "react";
 import { destinations } from "../../data/destinations";
 import DestinationCard from "../../components/DestinationCard/DestinationCard";
 import styles from './favouritesPage.module.css';
+import { Link } from "react-router-dom";
 
 export default function FavouritesPage(){
     const [favourites, setFavourites] = useState([])
@@ -34,7 +35,7 @@ export default function FavouritesPage(){
     return (
         <div className={styles.container}>
         {favourites.map((a) => (
-            <DestinationCard key={a.id} name={a.name} img={a.image} alt={`An image of ${a.name}`}/>
+            <Link to={`/details/${a.name}`} className={styles.link}><DestinationCard key={a.id} name={a.name} img={a.image} alt={`An image of ${a.name}`}/></Link>
         ))}
         </div>
     )

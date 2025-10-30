@@ -30,7 +30,8 @@
     animation: fade-in 2s ease-out;
 }
 
-.container:hover .img {
+.container:hover .img,
+.container:focus .img {
     transform: translateY(0.97vw), scale(1.05);
     box-shadow : 0 8px 20px rgba(0, 0, 0, 0.3);
 }
@@ -40,7 +41,8 @@
     transition : opacity 0.7s ease-out;
 }
 
-.container:hover .img::before {
+.container:hover .img::before,
+.container:focus .img::before {
     opacity : 1;
     inset : 0;
     content : "";

@@ -27,7 +27,8 @@
     transition : transform 0.3s ease-out, background-color 0.3s ease-out;
 }
 
-.callToAction:hover {
+.callToAction:hover,
+.callToAction:focus{
     background-color : rgb(211, 48, 60, 0.8);
     transform : translateY(0.2vw);
 }

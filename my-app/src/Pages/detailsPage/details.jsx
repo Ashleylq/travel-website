@@ -2,11 +2,16 @@ import styles from './details.module.css'
 import { useEffect, useState } from 'react'
 import DestinationCard from '../../components/DestinationCard/DestinationCard';
 import CityMap from '../../components/Map/Map';
+import { destinations } from '../../data/destinations';
+import { useParams, useNavigate } from 'react-router-dom';
 
-export default function DetailsPage({city}){
+export default function DetailsPage(){
+    const { cityname } = useParams();
+    const city = destinations.find((c) => c.name === cityname);
     const [isFavourited, setFavouriteItem] = useState(false);
     const [highlights, setHighlights] = useState([]);
     const [weather, setWeather] = useState({});
+    const navigate = useNavigate();
     function changeFavourite(oldState){
         const newState = !oldState;
         const stored = JSON.parse(localStorage.getItem("favourites"));
@@ -65,7 +70,7 @@ export default function DetailsPage({city}){
     }, [])
     return(
         <div className={styles.container}>
-            <span className={`${styles.arrow} material-symbols-outlined`}>arrow_back</span>
+            <span className={`${styles.arrow} material-symbols-outlined`} onClick={() => navigate(-1)}>arrow_back</span>
             <span className={`${styles.fav} material-symbols-outlined ${isFavourited ? styles.favourited : ''}`} onClick={() => changeFavourite(isFavourited)}>favorite</span>
             <img className={styles.img} src={city.image} alt={`An image of ${city.name}`}/>
             <div style={{margin : '0 1.465vw'}} className={styles.textContainer}>

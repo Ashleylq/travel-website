@@ -1,7 +1,23 @@
 .container {
+    text-decoration: none;
+    box-shadow: none;
     display : grid;
     grid-template-columns : repeat(auto-fit, minmax(200px, 1fr));
     max-width : calc(250px * 4 + 3rem);
     margin-top : 1.25rem;
     grid-gap : 0.625rem;
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.link:focus,
+.link:active {
+  outline: none;
+  box-shadow: none;
 }

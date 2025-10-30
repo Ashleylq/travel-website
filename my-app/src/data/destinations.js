@@ -9,7 +9,7 @@ import VeronaImg from '../assets/images/Verona.jpg'
 
 export const destinations = [
   {
-    id: 1,
+    id: 0,
     name: "Rome",
     image: RomeImg,
     description:
@@ -17,7 +17,7 @@ export const destinations = [
     highlights: ["Colosseum", "Trevi Fountain", "Pantheon"],
   },
   {
-    id: 2,
+    id: 1,
     name: "Venice",
     image: VeniceImg,
     description:
@@ -25,7 +25,7 @@ export const destinations = [
     highlights: ["Grand Canal", "St. Mark’s Basilica", "Rialto Bridge"],
   },
   {
-    id: 3,
+    id: 2,
     name: "Florence",
     image: FlorenceImg,
     description:
@@ -33,7 +33,7 @@ export const destinations = [
     highlights: ["Duomo", "Uffizi Gallery", "Ponte Vecchio"],
   },
   {
-    id: 4,
+    id: 3,
     name: "Milan",
     image: MilanImg,
     description:
@@ -45,7 +45,7 @@ export const destinations = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     name: "Naples",
     image: NaplesImg,
     description:
@@ -53,7 +53,7 @@ export const destinations = [
     highlights: ["Mount Vesuvius", "Pompeii", "Piazza del Plebiscito"],
   },
   {
-    id: 6,
+    id: 5,
     name: "Bologna",
     image: BolognaImg,
     description:
@@ -61,7 +61,7 @@ export const destinations = [
     highlights: ["Piazza Maggiore", "Two Towers", "University of Bologna"],
   },
   {
-    id: 7,
+    id: 6,
     name: "Turin",
     image: TurinImg,
     description:
@@ -69,7 +69,7 @@ export const destinations = [
     highlights: ["Mole Antonelliana", "Egyptian Museum", "Piazza Castello"],
   },
   {
-    id: 8,
+    id: 7,
     name: "Verona",
     image: VeronaImg,
     description:

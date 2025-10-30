@@ -28,6 +28,26 @@ body::before {
     animation : brighten 0.8s ease-out;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Removes default focus outline & shadow */
+a, a:focus, a:active, a:visited {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  -webkit-focus-ring-color: transparent;
+}
+
+/* If <Link> wraps a <div> */
+a div:focus,
+a div:active {
+  outline: none;
+  box-shadow: none;
+}
+
 @media (max-width : 768px){
     body{
         background-image: url('/mobile-background.jpg');

@@ -5,3 +5,17 @@
     margin-top : 1.25rem;
     grid-gap : 0.625rem;
 }
+
+.link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.link:focus,
+.link:active {
+  outline: none;
+  box-shadow: none;
+}
